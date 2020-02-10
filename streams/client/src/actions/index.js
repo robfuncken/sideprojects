@@ -32,7 +32,7 @@ export const createStream = formValues => async dispatch => {
  export const fetchStreams = () => async dispatch => {
      const response = await streams.get('/streams')
 
-     displatch({type: FETCH_STREAMS, payload: response.data })
+     dispatch({type: FETCH_STREAMS, payload: response.data })
 
  }; 
 
